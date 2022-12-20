@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Style.css" />
+    <title>Don't Take Spike's bones</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body id="bungkus">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary shadow-lg">
+      <div class="container">
+        <img
+          src="image/Bones.png"
+          alt="Logo"
+          width="30"
+          height="24"
+          class="d-inline-block align-text-top"
+        />
+
+        <a class="navbar-brand" href="Index.html">Don't Take Spike's Bones</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="Index.html"
+                >Menu</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="help.html">Help</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Akhir Navbar-->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron text-center">
+      <div id="nav1">
+        <h1 class="welcome">Play Game</h1>
+        <img src="image/Logo.png" class="anjing" />
+        <br />
+        <div class="player-text">
+          <h1 id="jumlahplayer">Player</h1>
+        </div>
+        <div class="nambah">
+          <input
+            type="text"
+            class="form"
+            id="playerbaru"
+            placeholder="New Player"
+            required
+          />
+        </div>
+
+        <div class="button">
+          <div id="nambahplayer">
+            <br />
+            <button
+              type="button"
+              class="btn-primary"
+              id="addplayer"
+              onClick="addPlayers()"
+            >
+              Add Player
+            </button>
+          </div>
+          <br />
+          <div id="playgame">
+            <button type="button" class="btn-primary" id="play">
+              Play Game
+            </button>
+          </div>
+        </div>
+        <br />
+        <h3><b>Player List</b></h3>
+        <ul id="nama-player" style="text-align: center;"></ul>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript">
+      var count = 1;
+      var l = document.getElementById("add-player");
+
+      function addPlayers() {
+        if (document.getElementById("playerbaru").value.length == 0) {
+          alert("Masukin yang bener Ganteng");
+        } else {
+          ++count;
+          var y = document.getElementById("playerbaru").value;
+          var x = document.createElement("p");
+          x.innerHTML = y;
+          document.getElementById("nama-player").appendChild(x);
+
+          var a = document.getElementById("jumlahplayer");
+          if (count == 2) {
+            a.innerHTML = "Next Player";
+          }
+        }
+      }
+
+      document.getElementById("play").onclick = function () {
+        if (count < 3) {
+          alert("Minimal 3 Player");
+        } else {
+          localStorage.setItem("PlayerAmount", count - 1);
+          location.href = "game.html";
+        }
+      };
+    </script>
+  </body>
+</html>

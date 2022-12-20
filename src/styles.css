@@ -1,0 +1,218 @@
+h1 {
+  font-size: 30px;
+  color: #000000;
+  text-align: center;
+  border-bottom: 7px black;
+}
+
+.anjing {
+  width: 250px;
+}
+
+.welcome {
+  padding: 2rem 1rem;
+}
+
+/* Hover */
+
+div#nav {
+  margin: 5px;
+  padding: 0;
+  cursor: pointer;
+}
+
+div#nav {
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+div#nav p {
+  text-decoration: none;
+  padding: 10 px 0;
+  color: ghostwhite;
+  font-weight: bold;
+}
+
+div#nav p:hover {
+  color: black;
+}
+
+/* Hover */
+
+.jumbotron {
+  padding: 2rem 1rem;
+  background-color: #0000000e;
+}
+
+body#bungkus {
+  background-color: rgb(235, 231, 231);
+}
+
+#nephi {
+  text-align: justify;
+  text-justify: inter-word;
+  text-align: center;
+  color: black;
+  font-family: Papyrus;
+  font-size: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+/* CARD 1 */
+
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  text-align: center;
+  margin: auto;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button#waifu {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
+}
+
+/* CARD 2 */
+
+.card2 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button#waifu {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
+}
+
+/* CARD 3 */
+
+.card3 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button#waifu {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
+}
+
+/* CARD 4 */
+
+.card4 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button#waifu {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover,
+a:hover {
+  opacity: 0.7;
+}
